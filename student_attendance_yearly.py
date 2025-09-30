@@ -6,8 +6,12 @@ import re
 import mysql.connector
 import configparser
 import warnings
+import urllib3
 
 warnings.filterwarnings("ignore", category=UserWarning, module="pandas")
+
+# Disable SSL warnings
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Configure logging
 logging.basicConfig(
@@ -211,7 +215,7 @@ def fetch_data(api_url, params, academic_year, month):
     print(f"Requesting URL: {url_with_params}")
     logging.info(f"Requesting URL: {url_with_params}")
 
-    response = requests.get(url_with_params)
+    response = requests.get(url_with_params, verify=False)
     if response.status_code == 200:
         json_response = response.json()
         data = json_response.get('data', [])
