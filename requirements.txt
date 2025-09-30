@@ -1,0 +1,6 @@
+requests==2.27.1
+pandas==2.1.4
+numpy==1.26.4
+mysql-connector-python==8.0.33
+configparser==5.2.0
+python-dateutil==2.8.2

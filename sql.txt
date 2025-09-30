@@ -1,0 +1,17 @@
+CREATE TABLE student_attendance_data (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    school_name VARCHAR(255) NOT NULL,
+    grade_name VARCHAR(10) NOT NULL,
+    division_name VARCHAR(10) NOT NULL,
+    course_name VARCHAR(255) NOT NULL,
+    student_id  VARCHAR(255) NOT NULL,
+    student_name VARCHAR(255) NOT NULL,
+    academic_year VARCHAR(10) NOT NULL,
+    gender CHAR(10) NOT NULL,
+    month VARCHAR(20) NOT NULL,
+    date DATE NOT NULL,
+    no_of_working_days INT NOT NULL,
+    no_of_present_days INT NOT NULL,
+    attendance_percentage VARCHAR(255) NOT NULL,
+    timestamp DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
