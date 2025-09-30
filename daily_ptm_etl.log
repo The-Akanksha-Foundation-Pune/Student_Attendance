@@ -11,3 +11,30 @@
 2025-09-30 15:48:13,068 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendancePTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=September
 2025-09-30 15:48:13,476 - INFO - Successfully fetched 0 records from API
 2025-09-30 15:48:13,479 - INFO - No data found for September 2025-2026
+2025-09-30 20:09:07,530 - INFO - === Starting Daily PTM ETL Process ===
+2025-09-30 20:09:07,530 - INFO - Connecting to MySQL database...
+2025-09-30 20:09:07,622 - INFO - package: mysql.connector.plugins
+2025-09-30 20:09:07,622 - INFO - plugin_name: caching_sha2_password
+2025-09-30 20:09:07,623 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 20:09:07,642 - INFO - Creating ptm_attendance_data table if it doesn't exist...
+2025-09-30 20:09:07,669 - INFO - Database table setup completed successfully!
+2025-09-30 20:09:07,690 - INFO - Table verification successful!
+2025-09-30 20:09:07,691 - INFO - Database connection closed.
+2025-09-30 20:09:07,692 - INFO - Processing data for August 2025-2026
+2025-09-30 20:09:07,692 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendancePTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 20:11:51,673 - INFO - Successfully fetched 14705 records from API
+2025-09-30 20:11:51,683 - INFO - Starting data cleaning for 14705 records...
+2025-09-30 20:11:51,714 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 20:11:51,733 - INFO - ✓ Cleaned student names
+2025-09-30 20:11:51,741 - INFO - ✓ Converted grade names
+2025-09-30 20:11:51,901 - INFO - ✓ Formatted dates
+2025-09-30 20:11:51,903 - INFO - ✓ Cleaned gender values
+2025-09-30 20:11:51,918 - INFO - ✓ Extracted division names
+2025-09-30 20:11:56,115 - INFO - Database insert completed: 14705 inserted, 0 duplicates, 0 errors
+2025-09-30 20:11:56,117 - INFO - === Daily PTM ETL Process Completed ===
+2025-09-30 20:11:56,117 - INFO - Processing time: 168.59 seconds
+2025-09-30 20:11:56,117 - INFO - Records fetched: 14705
+2025-09-30 20:11:56,117 - INFO - Records inserted: 14705
+2025-09-30 20:11:56,117 - INFO - Duplicates skipped: 0
+2025-09-30 20:11:56,117 - INFO - Errors: 0
+2025-09-30 20:12:00,084 - INFO - Email notification sent successfully

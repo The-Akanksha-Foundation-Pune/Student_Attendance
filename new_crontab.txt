@@ -1,0 +1,7 @@
+# Existing cron job
+0 21 * * * cd /home/ubuntu/Akanksha_Inhouse/ETL/Active_Students && python3 main.py >> logs/cron.log 2>&1
+
+# Student Attendance ETL Scripts - Run at 4:00 AM daily
+0 4 * * * cd /Users/admin/Downloads/ETL/Student_Attendance && source venv/bin/activate && python student_attendance_monthly.py >> logs/student_attendance_monthly_cron.log 2>&1
+0 4 * * * cd /Users/admin/Downloads/ETL/Student_Attendance && source venv/bin/activate && python ptm_daily.py >> logs/ptm_daily_cron.log 2>&1
+0 4 * * * cd /Users/admin/Downloads/ETL/Student_Attendance && source venv/bin/activate && python swptm_daily.py >> logs/swptm_daily_cron.log 2>&1

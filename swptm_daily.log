@@ -1,0 +1,161 @@
+2025-09-30 19:12:24,607 - INFO - === Starting Daily SWPTM ETL Process ===
+2025-09-30 19:12:24,607 - INFO - Connecting to MySQL database...
+2025-09-30 19:12:24,727 - INFO - package: mysql.connector.plugins
+2025-09-30 19:12:24,728 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:12:24,728 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:12:24,773 - INFO - Creating swptm_attendance_data table if it doesn't exist...
+2025-09-30 19:12:24,805 - INFO - Database table setup completed successfully!
+2025-09-30 19:12:24,834 - INFO - Table verification successful!
+2025-09-30 19:12:24,835 - INFO - Database connection closed.
+2025-09-30 19:12:24,836 - INFO - Processing data for September 2025-2026
+2025-09-30 19:12:24,836 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=September
+2025-09-30 19:12:25,369 - INFO - Successfully fetched 0 records from API
+2025-09-30 19:12:25,373 - INFO - No data found for September 2025-2026
+2025-09-30 19:14:18,852 - INFO - === Starting Daily SWPTM ETL Process ===
+2025-09-30 19:14:18,852 - INFO - Connecting to MySQL database...
+2025-09-30 19:14:18,932 - INFO - package: mysql.connector.plugins
+2025-09-30 19:14:18,932 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:14:18,933 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:14:18,954 - INFO - Creating swptm_attendance_data table if it doesn't exist...
+2025-09-30 19:14:18,971 - INFO - Database table setup completed successfully!
+2025-09-30 19:14:18,987 - INFO - Table verification successful!
+2025-09-30 19:14:18,988 - INFO - Database connection closed.
+2025-09-30 19:14:18,989 - INFO - Processing data for September 2025-2026
+2025-09-30 19:14:18,989 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=September
+2025-09-30 19:14:19,352 - INFO - Successfully fetched 0 records from API
+2025-09-30 19:14:19,354 - INFO - No data found for September 2025-2026
+2025-09-30 19:14:19,355 - INFO - === Daily SWPTM ETL Process Completed (No Data) ===
+2025-09-30 19:14:19,355 - INFO - Processing time: 0.50 seconds
+2025-09-30 19:14:19,355 - INFO - Records fetched: 0
+2025-09-30 19:14:19,355 - INFO - Records inserted: 0
+2025-09-30 19:14:19,355 - INFO - Duplicates skipped: 0
+2025-09-30 19:14:19,355 - INFO - Errors: 0
+2025-09-30 19:14:23,152 - INFO - Email notification sent successfully
+2025-09-30 19:15:24,329 - INFO - === Starting Daily SWPTM ETL Process ===
+2025-09-30 19:15:24,329 - INFO - Connecting to MySQL database...
+2025-09-30 19:15:24,423 - INFO - package: mysql.connector.plugins
+2025-09-30 19:15:24,423 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:15:24,424 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:15:24,437 - INFO - Creating swptm_attendance_data table if it doesn't exist...
+2025-09-30 19:15:24,449 - INFO - Database table setup completed successfully!
+2025-09-30 19:15:24,463 - INFO - Table verification successful!
+2025-09-30 19:15:24,463 - INFO - Database connection closed.
+2025-09-30 19:15:24,464 - INFO - Processing data for September 2025-2026
+2025-09-30 19:15:24,464 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=September
+2025-09-30 19:15:24,856 - INFO - Successfully fetched 0 records from API
+2025-09-30 19:15:24,857 - INFO - No data found for September 2025-2026
+2025-09-30 19:15:24,857 - INFO - === Daily SWPTM ETL Process Completed (No Data) ===
+2025-09-30 19:15:24,857 - INFO - Processing time: 0.53 seconds
+2025-09-30 19:15:24,857 - INFO - Records fetched: 0
+2025-09-30 19:15:24,857 - INFO - Records inserted: 0
+2025-09-30 19:15:24,857 - INFO - Duplicates skipped: 0
+2025-09-30 19:15:24,857 - INFO - Errors: 0
+2025-09-30 19:15:28,174 - INFO - Email notification sent successfully
+2025-09-30 19:24:44,284 - INFO - === Starting Daily SWPTM ETL Process ===
+2025-09-30 19:24:44,284 - INFO - Connecting to MySQL database...
+2025-09-30 19:24:44,380 - INFO - package: mysql.connector.plugins
+2025-09-30 19:24:44,380 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:24:44,380 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:24:44,398 - INFO - Creating swptm_attendance_data table if it doesn't exist...
+2025-09-30 19:24:44,417 - INFO - Database table setup completed successfully!
+2025-09-30 19:24:44,438 - INFO - Table verification successful!
+2025-09-30 19:24:44,438 - INFO - Database connection closed.
+2025-09-30 19:24:44,439 - INFO - Processing data for August 2025-2026
+2025-09-30 19:24:44,439 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 19:28:02,939 - INFO - Successfully fetched 14705 records from API
+2025-09-30 19:28:02,942 - INFO - Starting data cleaning for 14705 records...
+2025-09-30 19:28:02,967 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 19:28:02,982 - INFO - ✓ Cleaned student names
+2025-09-30 19:28:02,991 - INFO - ✓ Converted grade names
+2025-09-30 19:28:03,043 - INFO - ✓ Formatted dates
+2025-09-30 19:28:03,045 - INFO - ✓ Cleaned gender values
+2025-09-30 19:28:03,051 - INFO - ✓ Extracted division names
+2025-09-30 19:28:07,170 - INFO - Database insert completed: 14705 inserted, 0 duplicates, 0 errors
+2025-09-30 19:28:07,172 - INFO - === Daily SWPTM ETL Process Completed ===
+2025-09-30 19:28:07,172 - INFO - Processing time: 202.89 seconds
+2025-09-30 19:28:07,172 - INFO - Records fetched: 14705
+2025-09-30 19:28:07,172 - INFO - Records inserted: 14705
+2025-09-30 19:28:07,172 - INFO - Duplicates skipped: 0
+2025-09-30 19:28:07,172 - INFO - Errors: 0
+2025-09-30 19:28:10,643 - INFO - Email notification sent successfully
+2025-09-30 19:36:34,269 - INFO - === Starting Daily SWPTM ETL Process ===
+2025-09-30 19:36:34,269 - INFO - Connecting to MySQL database...
+2025-09-30 19:36:34,359 - INFO - package: mysql.connector.plugins
+2025-09-30 19:36:34,359 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:36:34,360 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:36:34,380 - INFO - Creating swptm_attendance_data table if it doesn't exist...
+2025-09-30 19:36:34,402 - INFO - Database table setup completed successfully!
+2025-09-30 19:36:34,427 - INFO - Table verification successful!
+2025-09-30 19:36:34,428 - INFO - Database connection closed.
+2025-09-30 19:36:34,429 - INFO - Processing data for August 2025-2026
+2025-09-30 19:36:34,429 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 19:39:35,187 - INFO - Successfully fetched 14705 records from API
+2025-09-30 19:39:35,190 - INFO - Starting data cleaning for 14705 records...
+2025-09-30 19:39:35,219 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 19:39:35,234 - INFO - ✓ Cleaned student names
+2025-09-30 19:39:35,243 - INFO - ✓ Converted grade names
+2025-09-30 19:39:35,294 - INFO - ✓ Formatted dates
+2025-09-30 19:39:35,296 - INFO - ✓ Cleaned gender values
+2025-09-30 19:39:35,302 - INFO - ✓ Extracted division names
+2025-09-30 19:39:39,182 - INFO - Database insert completed: 14705 inserted, 0 duplicates, 0 errors
+2025-09-30 19:39:39,184 - INFO - === Daily SWPTM ETL Process Completed ===
+2025-09-30 19:39:39,185 - INFO - Processing time: 184.91 seconds
+2025-09-30 19:39:39,185 - INFO - Records fetched: 14705
+2025-09-30 19:39:39,185 - INFO - Records inserted: 14705
+2025-09-30 19:39:39,185 - INFO - Duplicates skipped: 0
+2025-09-30 19:39:39,185 - INFO - Errors: 0
+2025-09-30 19:39:43,122 - INFO - Email notification sent successfully
+2025-09-30 19:44:21,569 - INFO - === Starting Daily SWPTM ETL Process ===
+2025-09-30 19:44:21,569 - INFO - Connecting to MySQL database...
+2025-09-30 19:44:21,660 - INFO - package: mysql.connector.plugins
+2025-09-30 19:44:21,661 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:44:21,661 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:44:21,678 - INFO - Creating swptm_attendance_data table if it doesn't exist...
+2025-09-30 19:44:21,696 - INFO - Database table setup completed successfully!
+2025-09-30 19:44:21,713 - INFO - Table verification successful!
+2025-09-30 19:44:21,714 - INFO - Database connection closed.
+2025-09-30 19:44:21,715 - INFO - Processing data for August 2025-2026
+2025-09-30 19:44:21,715 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 19:47:38,911 - INFO - Successfully fetched 14705 records from API
+2025-09-30 19:47:38,920 - INFO - Starting data cleaning for 14705 records...
+2025-09-30 19:47:38,943 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 19:47:38,960 - INFO - ✓ Cleaned student names
+2025-09-30 19:47:38,968 - INFO - ✓ Converted grade names
+2025-09-30 19:47:39,020 - INFO - ✓ Formatted dates
+2025-09-30 19:47:39,023 - INFO - ✓ Cleaned gender values
+2025-09-30 19:47:39,027 - INFO - ✓ Extracted division names
+2025-09-30 19:47:43,182 - INFO - Database insert completed: 14705 inserted, 0 duplicates, 0 errors
+2025-09-30 19:47:43,184 - INFO - === Daily SWPTM ETL Process Completed ===
+2025-09-30 19:47:43,184 - INFO - Processing time: 201.61 seconds
+2025-09-30 19:47:43,184 - INFO - Records fetched: 14705
+2025-09-30 19:47:43,184 - INFO - Records inserted: 14705
+2025-09-30 19:47:43,184 - INFO - Duplicates skipped: 0
+2025-09-30 19:47:43,184 - INFO - Errors: 0
+2025-09-30 19:47:47,598 - INFO - Email notification sent successfully
+2025-09-30 19:50:23,959 - INFO - === Starting Daily SWPTM ETL Process ===
+2025-09-30 19:50:23,959 - INFO - Connecting to MySQL database...
+2025-09-30 19:50:24,050 - INFO - package: mysql.connector.plugins
+2025-09-30 19:50:24,050 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:50:24,051 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:50:24,073 - INFO - Creating swptm_attendance_data table if it doesn't exist...
+2025-09-30 19:50:24,095 - INFO - Database table setup completed successfully!
+2025-09-30 19:50:24,114 - INFO - Table verification successful!
+2025-09-30 19:50:24,115 - INFO - Database connection closed.
+2025-09-30 19:50:24,115 - INFO - Processing data for August 2025-2026
+2025-09-30 19:50:24,115 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 19:53:16,298 - INFO - Successfully fetched 14705 records from API
+2025-09-30 19:53:16,307 - INFO - Starting data cleaning for 14705 records...
+2025-09-30 19:53:16,333 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 19:53:16,350 - INFO - ✓ Cleaned student names
+2025-09-30 19:53:16,358 - INFO - ✓ Converted grade names
+2025-09-30 19:53:16,418 - INFO - ✓ Formatted dates
+2025-09-30 19:53:16,420 - INFO - ✓ Cleaned gender values
+2025-09-30 19:53:16,425 - INFO - ✓ Extracted division names
+2025-09-30 19:53:20,332 - INFO - Database insert completed: 14705 inserted, 0 duplicates, 0 errors
+2025-09-30 19:53:20,333 - INFO - === Daily SWPTM ETL Process Completed ===
+2025-09-30 19:53:20,333 - INFO - Processing time: 176.37 seconds
+2025-09-30 19:53:20,333 - INFO - Records fetched: 14705
+2025-09-30 19:53:20,333 - INFO - Records inserted: 14705
+2025-09-30 19:53:20,333 - INFO - Duplicates skipped: 0
+2025-09-30 19:53:20,333 - INFO - Errors: 0
+2025-09-30 19:53:24,315 - INFO - Email notification sent successfully

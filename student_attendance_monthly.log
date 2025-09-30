@@ -1,0 +1,146 @@
+2025-09-30 19:16:44,337 - INFO - Starting daily update process.
+2025-09-30 19:16:44,337 - INFO - Connecting to MySQL database...
+2025-09-30 19:16:44,427 - INFO - package: mysql.connector.plugins
+2025-09-30 19:16:44,427 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:16:44,427 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:16:44,448 - INFO - Creating student_attendance_data table if it doesn't exist...
+2025-09-30 19:16:44,549 - INFO - Database table setup completed successfully!
+2025-09-30 19:16:44,561 - INFO - Table verification successful!
+2025-09-30 19:16:44,561 - INFO - Database connection closed.
+2025-09-30 19:16:44,562 - INFO - Requesting URL: https://akanksha.edustems.com/getStudentAttendance.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 19:19:06,021 - INFO - Data fetched from API successfully. Records fetched: 14705
+2025-09-30 19:19:06,167 - INFO - Records after data cleaning: 14705
+2025-09-30 19:19:06,240 - INFO - Connecting to MySQL database.
+2025-09-30 19:19:06,379 - INFO - Successfully connected to MySQL.
+2025-09-30 19:19:06,381 - INFO - Existing records in database: 0
+2025-09-30 19:19:06,387 - INFO - New records to process: 14705
+2025-09-30 19:19:06,394 - INFO - [Deduplication] Found 2 potential duplicate rows based on ['student_id', 'student_name', 'gender', 'school_name'].
+2025-09-30 19:19:06,399 - INFO - 
+--- Duplicate Group: ('SHASHA171112', 'Sharfa Barkat Ali Shaikh', 'F', 'NMMC93') ---
+2025-09-30 19:19:06,407 - INFO - Kept:
+      academic_year school_name  ...    city            student_attendance_data_unique_key
+12352     2025-2026      NMMC93  ...  Mumbai  2025-2026|August|NMMC93|GRADE 7|SHASHA171112
+
+[1 rows x 15 columns]
+2025-09-30 19:19:06,409 - INFO - [Deduplication] Dropped 0 row(s). Kept 1 unique entries.
+2025-09-30 19:19:06,410 - INFO - Duplicates removed during processing: 1
+2025-09-30 19:19:07,298 - WARNING - Duplicate entry skipped: 2025-2026|August|LGRMNMCEMS|JR.KG|SAMGON071021
+2025-09-30 19:19:08,252 - WARNING - Duplicate entry skipped: 2025-2026|August|LDRKEMS|SR.KG|SHIKAL020719
+2025-09-30 19:19:08,839 - WARNING - Duplicate entry skipped: 2025-2026|August|ABMPS|JR.KG|KRITEL261021
+2025-09-30 19:19:09,525 - WARNING - Duplicate entry skipped: 2025-2026|August|SBP|SR.KG|MOHKHA301019
+2025-09-30 19:19:09,794 - INFO - Database insertion completed:
+2025-09-30 19:19:09,794 - INFO -   - New records inserted: 14700
+2025-09-30 19:19:09,795 - INFO -   - Duplicate records skipped: 4
+2025-09-30 19:19:09,795 - INFO -   - Error records: 0
+2025-09-30 19:19:09,797 - INFO - Data processing completed for August 2025-2026.
+2025-09-30 19:19:09,797 - INFO - ================================================================================
+2025-09-30 19:19:09,797 - INFO - STUDENT ATTENDANCE ETL STATISTICS - August 2025-2026
+2025-09-30 19:19:09,797 - INFO - ================================================================================
+2025-09-30 19:19:09,797 - INFO - Records fetched from API: 14,705
+2025-09-30 19:19:09,797 - INFO - Records after cleaning: 14,705
+2025-09-30 19:19:09,797 - INFO - Existing records in database: 0
+2025-09-30 19:19:09,797 - INFO - New records to process: 14,705
+2025-09-30 19:19:09,797 - INFO - Duplicates removed: 1
+2025-09-30 19:19:09,797 - INFO - New records inserted: 14,700
+2025-09-30 19:19:09,797 - INFO - Duplicate records skipped: 4
+2025-09-30 19:19:09,797 - INFO - Error records: 0
+2025-09-30 19:19:09,797 - INFO - Processing time: 145.23 seconds
+2025-09-30 19:19:09,797 - INFO - ================================================================================
+2025-09-30 19:19:09,802 - INFO - Daily update process completed successfully.
+2025-09-30 19:19:13,432 - INFO - Email notification sent successfully
+2025-09-30 19:27:44,231 - INFO - Starting daily update process.
+2025-09-30 19:27:44,231 - INFO - Connecting to MySQL database...
+2025-09-30 19:27:44,316 - INFO - package: mysql.connector.plugins
+2025-09-30 19:27:44,316 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:27:44,316 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:27:44,339 - INFO - Creating student_attendance_data table if it doesn't exist...
+2025-09-30 19:27:44,358 - INFO - Database table setup completed successfully!
+2025-09-30 19:27:44,375 - INFO - Table verification successful!
+2025-09-30 19:27:44,376 - INFO - Database connection closed.
+2025-09-30 19:27:44,377 - INFO - Requesting URL: https://akanksha.edustems.com/getStudentAttendance.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 19:29:24,515 - INFO - Starting daily update process.
+2025-09-30 19:29:24,515 - INFO - Connecting to MySQL database...
+2025-09-30 19:29:24,563 - INFO - package: mysql.connector.plugins
+2025-09-30 19:29:24,563 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:29:24,564 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:29:24,567 - INFO - Creating student_attendance_data table if it doesn't exist...
+2025-09-30 19:29:24,578 - INFO - Database table setup completed successfully!
+2025-09-30 19:29:24,594 - INFO - Table verification successful!
+2025-09-30 19:29:24,595 - INFO - Database connection closed.
+2025-09-30 19:29:24,596 - INFO - Requesting URL: https://akanksha.edustems.com/getStudentAttendance.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 19:30:36,409 - INFO - Data fetched from API successfully. Records fetched: 14705
+2025-09-30 19:30:36,544 - INFO - Records after data cleaning: 14705
+2025-09-30 19:30:36,616 - INFO - Connecting to MySQL database.
+2025-09-30 19:30:36,693 - INFO - Successfully connected to MySQL.
+2025-09-30 19:30:36,697 - INFO - Existing records in database: 14700
+2025-09-30 19:30:36,701 - INFO - New records to process: 0
+2025-09-30 19:30:36,701 - INFO - No new data to insert for August 2025-2026.
+2025-09-30 19:30:36,702 - INFO - ================================================================================
+2025-09-30 19:30:36,702 - INFO - STUDENT ATTENDANCE ETL STATISTICS - August 2025-2026
+2025-09-30 19:30:36,702 - INFO - ================================================================================
+2025-09-30 19:30:36,702 - INFO - Records fetched from API: 14,705
+2025-09-30 19:30:36,702 - INFO - Records after cleaning: 14,705
+2025-09-30 19:30:36,702 - INFO - Existing records in database: 14,700
+2025-09-30 19:30:36,702 - INFO - New records to process: 0
+2025-09-30 19:30:36,702 - INFO - Duplicates removed: 0
+2025-09-30 19:30:36,702 - INFO - New records inserted: 0
+2025-09-30 19:30:36,702 - INFO - Duplicate records skipped: 0
+2025-09-30 19:30:36,702 - INFO - Error records: 0
+2025-09-30 19:30:36,702 - INFO - Processing time: 172.32 seconds
+2025-09-30 19:30:36,702 - INFO - ================================================================================
+2025-09-30 19:30:36,706 - INFO - Daily update process completed successfully.
+2025-09-30 19:30:40,600 - INFO - Email notification sent successfully
+2025-09-30 19:32:07,945 - INFO - Data fetched from API successfully. Records fetched: 14705
+2025-09-30 19:32:08,071 - INFO - Records after data cleaning: 14705
+2025-09-30 19:32:08,141 - INFO - Connecting to MySQL database.
+2025-09-30 19:32:08,219 - INFO - Successfully connected to MySQL.
+2025-09-30 19:32:08,220 - INFO - Existing records in database: 14700
+2025-09-30 19:32:08,222 - INFO - New records to process: 0
+2025-09-30 19:32:08,222 - INFO - No new data to insert for August 2025-2026.
+2025-09-30 19:32:08,223 - INFO - ================================================================================
+2025-09-30 19:32:08,223 - INFO - STUDENT ATTENDANCE ETL STATISTICS - August 2025-2026
+2025-09-30 19:32:08,223 - INFO - ================================================================================
+2025-09-30 19:32:08,223 - INFO - Records fetched from API: 14,705
+2025-09-30 19:32:08,223 - INFO - Records after cleaning: 14,705
+2025-09-30 19:32:08,223 - INFO - Existing records in database: 14,700
+2025-09-30 19:32:08,223 - INFO - New records to process: 0
+2025-09-30 19:32:08,223 - INFO - Duplicates removed: 0
+2025-09-30 19:32:08,223 - INFO - New records inserted: 0
+2025-09-30 19:32:08,223 - INFO - Duplicate records skipped: 0
+2025-09-30 19:32:08,223 - INFO - Error records: 0
+2025-09-30 19:32:08,223 - INFO - Processing time: 163.63 seconds
+2025-09-30 19:32:08,223 - INFO - ================================================================================
+2025-09-30 19:32:08,227 - INFO - Daily update process completed successfully.
+2025-09-30 19:32:12,057 - INFO - Email notification sent successfully
+2025-09-30 19:37:20,974 - INFO - Starting daily update process.
+2025-09-30 19:37:20,974 - INFO - Connecting to MySQL database...
+2025-09-30 19:37:21,060 - INFO - package: mysql.connector.plugins
+2025-09-30 19:37:21,060 - INFO - plugin_name: caching_sha2_password
+2025-09-30 19:37:21,061 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 19:37:21,082 - INFO - Creating student_attendance_data table if it doesn't exist...
+2025-09-30 19:37:21,101 - INFO - Database table setup completed successfully!
+2025-09-30 19:37:21,120 - INFO - Table verification successful!
+2025-09-30 19:37:21,120 - INFO - Database connection closed.
+2025-09-30 19:37:21,121 - INFO - Requesting URL: https://akanksha.edustems.com/getStudentAttendance.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 19:40:28,650 - INFO - Data fetched from API successfully. Records fetched: 14705
+2025-09-30 19:40:28,786 - INFO - Records after data cleaning: 14705
+2025-09-30 19:40:28,855 - INFO - Connecting to MySQL database.
+2025-09-30 19:40:28,938 - INFO - Successfully connected to MySQL.
+2025-09-30 19:40:28,939 - INFO - Existing records in database: 14700
+2025-09-30 19:40:28,945 - INFO - New records to process: 0
+2025-09-30 19:40:28,945 - INFO - No new data to insert for August 2025-2026.
+2025-09-30 19:40:28,945 - INFO - ================================================================================
+2025-09-30 19:40:28,945 - INFO - STUDENT ATTENDANCE ETL STATISTICS - August 2025-2026
+2025-09-30 19:40:28,945 - INFO - ================================================================================
+2025-09-30 19:40:28,945 - INFO - Records fetched from API: 14,705
+2025-09-30 19:40:28,945 - INFO - Records after cleaning: 14,705
+2025-09-30 19:40:28,945 - INFO - Existing records in database: 14,700
+2025-09-30 19:40:28,945 - INFO - New records to process: 0
+2025-09-30 19:40:28,945 - INFO - Duplicates removed: 0
+2025-09-30 19:40:28,945 - INFO - New records inserted: 0
+2025-09-30 19:40:28,945 - INFO - Duplicate records skipped: 0
+2025-09-30 19:40:28,945 - INFO - Error records: 0
+2025-09-30 19:40:28,945 - INFO - Processing time: 187.82 seconds
+2025-09-30 19:40:28,945 - INFO - ================================================================================
+2025-09-30 19:40:28,949 - INFO - Daily update process completed successfully.
+2025-09-30 19:40:32,782 - INFO - Email notification sent successfully

@@ -12,6 +12,10 @@ import mysql.connector
 import configparser
 import urllib3
 import re
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from dateutil.relativedelta import relativedelta
 
 # Disable SSL warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -173,8 +177,61 @@ def get_academic_year(date_obj):
         return f"{date_obj.year}-{date_obj.year + 1}"
 
 def get_month_name(date_obj):
-    """Get month name from date object"""
-    return date_obj.strftime('%B')
+    """Get previous month name from date object"""
+    previous_month = date_obj - relativedelta(months=1)
+    return previous_month.strftime('%B')
+
+def send_email_notification(stats, academic_year, month_name, processing_time):
+    """Send email notification with processing results"""
+    try:
+        # Email configuration
+        smtp_server = "smtp.gmail.com"
+        smtp_port = 587
+        sender_email = "nikhil.aher@akanksha.org"
+        sender_password = "islbhhepnygacrko"
+        recipient_email = "nikhil.aher@akanksha.org"
+        
+        # Create message
+        msg = MIMEMultipart()
+        msg['From'] = sender_email
+        msg['To'] = recipient_email
+        msg['Subject'] = f"PTM Daily ETL - {month_name} {academic_year} - Processing Complete"
+        
+        # Email body
+        body = f"""
+PTM Daily ETL Process Completed Successfully!
+
+📊 PROCESSING SUMMARY:
+• Academic Year: {academic_year}
+• Month: {month_name}
+• Processing Time: {processing_time:.2f} seconds
+
+📈 DATA STATISTICS:
+• Records Fetched: {stats.get('records_fetched', 0)}
+• Records Inserted: {stats.get('new_records_inserted', 0)}
+• Duplicates Skipped: {stats.get('duplicate_records_skipped', 0)}
+• Errors: {stats.get('error_records', 0)}
+
+✅ STATUS: SUCCESS
+🕐 Completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+This is an automated notification from the PTM Daily ETL system.
+        """
+        
+        msg.attach(MIMEText(body, 'plain'))
+        
+        # Send email
+        server = smtplib.SMTP(smtp_server, smtp_port)
+        server.starttls()
+        server.login(sender_email, sender_password)
+        text = msg.as_string()
+        server.sendmail(sender_email, recipient_email, text)
+        server.quit()
+        
+        logging.info("Email notification sent successfully")
+        
+    except Exception as e:
+        logging.error(f"Failed to send email notification: {e}")
 
 def fetch_data_from_api(academic_year, month):
     """Fetch data from PTM API"""
@@ -276,6 +333,26 @@ def process_daily_data():
     
     if df.empty:
         logging.info(f"No data found for {month_name} {academic_year}")
+        
+        # Send email notification even when no data
+        end_time = datetime.now()
+        processing_time = (end_time - start_time).total_seconds()
+        stats = {
+            'records_fetched': 0,
+            'new_records_inserted': 0,
+            'duplicate_records_skipped': 0,
+            'error_records': 0
+        }
+        
+        logging.info("=== Daily PTM ETL Process Completed (No Data) ===")
+        logging.info(f"Processing time: {processing_time:.2f} seconds")
+        logging.info(f"Records fetched: 0")
+        logging.info(f"Records inserted: 0")
+        logging.info(f"Duplicates skipped: 0")
+        logging.info(f"Errors: 0")
+        
+        # Send email notification
+        send_email_notification(stats, academic_year, month_name, processing_time)
         return
     
     # Clean and process data
@@ -304,7 +381,7 @@ def process_daily_data():
     )
     
     # Insert data
-    stats = {}
+    stats = {'records_fetched': len(df)}
     insert_data_to_mysql(df, stats)
     
     # Final statistics
@@ -317,6 +394,9 @@ def process_daily_data():
     logging.info(f"Records inserted: {stats.get('new_records_inserted', 0)}")
     logging.info(f"Duplicates skipped: {stats.get('duplicate_records_skipped', 0)}")
     logging.info(f"Errors: {stats.get('error_records', 0)}")
+    
+    # Send email notification
+    send_email_notification(stats, academic_year, month_name, processing_time)
 
 if __name__ == "__main__":
     process_daily_data()

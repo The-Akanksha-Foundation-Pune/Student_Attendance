@@ -12,6 +12,9 @@ import logging
 import mysql.connector
 import configparser
 import urllib3
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 # Disable SSL warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -148,6 +151,58 @@ def clean_gender(value):
     logging.warning(f"Unrecognized gender value: {original}")
     return original
 
+def send_email_notification(stats, academic_year, month_name, processing_time):
+    """Send email notification with processing results"""
+    try:
+        # Email configuration
+        smtp_server = "smtp.gmail.com"
+        smtp_port = 587
+        sender_email = "nikhil.aher@akanksha.org"
+        sender_password = "islbhhepnygacrko"
+        recipient_email = "nikhil.aher@akanksha.org"
+        
+        # Create message
+        msg = MIMEMultipart()
+        msg['From'] = sender_email
+        msg['To'] = recipient_email
+        msg['Subject'] = f"Student Attendance Monthly ETL - {month_name} {academic_year} - Processing Complete"
+        
+        # Email body
+        body = f"""
+Student Attendance Monthly ETL Process Completed Successfully!
+
+📊 PROCESSING SUMMARY:
+• Academic Year: {academic_year}
+• Month: {month_name}
+• Processing Time: {processing_time:.2f} seconds
+
+📈 DATA STATISTICS:
+• Records Fetched: {stats.get('api_records_fetched', 0)}
+• Records Inserted: {stats.get('new_records_inserted', 0)}
+• Duplicates Skipped: {stats.get('duplicate_records_skipped', 0)}
+• Errors: {stats.get('error_records', 0)}
+
+✅ STATUS: SUCCESS
+🕐 Completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+This is an automated notification from the Student Attendance Monthly ETL system.
+        """
+        
+        msg.attach(MIMEText(body, 'plain'))
+        
+        # Send email
+        server = smtplib.SMTP(smtp_server, smtp_port)
+        server.starttls()
+        server.login(sender_email, sender_password)
+        text = msg.as_string()
+        server.sendmail(sender_email, recipient_email, text)
+        server.quit()
+        
+        logging.info("Email notification sent successfully")
+        
+    except Exception as e:
+        logging.error(f"Failed to send email notification: {e}")
+
 def extract_division(value):
     match = re.search(r'[A-Za-z]+', value)
     if match:
@@ -277,19 +332,6 @@ def insert_data_to_mysql(df, stats):
 def fetch_data_from_api_and_process():
     from dateutil.relativedelta import relativedelta
     
-    # Initialize statistics tracking
-    stats = {
-        'api_records_fetched': 0,
-        'records_after_cleaning': 0,
-        'existing_records_in_db': 0,
-        'new_records_to_process': 0,
-        'duplicates_removed': 0,
-        'new_records_inserted': 0,
-        'duplicate_records_skipped': 0,
-        'error_records': 0,
-        'processing_time_seconds': 0
-    }
-    
     start_time = datetime.now()
     
     today = datetime.now()
@@ -300,6 +342,21 @@ def fetch_data_from_api_and_process():
     # Determine academic year
     academic_year = f"{previous_year-1}-{previous_year}" if previous_month < 5 else f"{previous_year}-{previous_year+1}"
     month_name = previous_month_date.strftime("%B")
+    
+    # Initialize statistics tracking
+    stats = {
+        'api_records_fetched': 0,
+        'records_after_cleaning': 0,
+        'existing_records_in_db': 0,
+        'new_records_to_process': 0,
+        'duplicates_removed': 0,
+        'new_records_inserted': 0,
+        'duplicate_records_skipped': 0,
+        'error_records': 0,
+        'processing_time_seconds': 0,
+        'academic_year': academic_year,
+        'month_name': month_name
+    }
 
     params = {
         'api-key': api_key,
@@ -440,6 +497,11 @@ def main():
     print(f"\n🎉 ETL PROCESS COMPLETED SUCCESSFULLY!")
     print(f"   Total new records added: {stats['new_records_inserted']:,}")
     print(f"   Processing time: {stats['processing_time_seconds']:.2f} seconds")
+    
+    # Send email notification
+    academic_year = stats.get('academic_year', '2025-2026')
+    month_name = stats.get('month_name', 'January')
+    send_email_notification(stats, academic_year, month_name, stats['processing_time_seconds'])
 
 if __name__ == "__main__":
     main()
