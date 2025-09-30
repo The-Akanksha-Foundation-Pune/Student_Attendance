@@ -1,0 +1,13 @@
+2025-09-30 15:48:12,981 - INFO - === Starting Daily PTM ETL Process ===
+2025-09-30 15:48:12,981 - INFO - Connecting to MySQL database...
+2025-09-30 15:48:13,041 - INFO - package: mysql.connector.plugins
+2025-09-30 15:48:13,042 - INFO - plugin_name: caching_sha2_password
+2025-09-30 15:48:13,042 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 15:48:13,046 - INFO - Creating ptm_attendance_data table if it doesn't exist...
+2025-09-30 15:48:13,055 - INFO - Database table setup completed successfully!
+2025-09-30 15:48:13,067 - INFO - Table verification successful!
+2025-09-30 15:48:13,067 - INFO - Database connection closed.
+2025-09-30 15:48:13,068 - INFO - Processing data for September 2025-2026
+2025-09-30 15:48:13,068 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendancePTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=September
+2025-09-30 15:48:13,476 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:13,479 - INFO - No data found for September 2025-2026

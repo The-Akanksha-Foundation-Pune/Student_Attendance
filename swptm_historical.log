@@ -1,0 +1,392 @@
+2025-09-30 15:48:43,448 - INFO - === Starting Historical SWPTM ETL Process ===
+2025-09-30 15:48:43,448 - INFO - Connecting to MySQL database...
+2025-09-30 15:48:43,500 - INFO - package: mysql.connector.plugins
+2025-09-30 15:48:43,500 - INFO - plugin_name: caching_sha2_password
+2025-09-30 15:48:43,501 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-30 15:48:43,502 - INFO - Creating swptm_attendance_data table if it doesn't exist...
+2025-09-30 15:48:43,532 - INFO - Database table setup completed successfully!
+2025-09-30 15:48:43,533 - INFO - Table verification successful!
+2025-09-30 15:48:43,534 - INFO - Database connection closed.
+2025-09-30 15:48:43,535 - INFO - Processing academic year: 2022-2023
+2025-09-30 15:48:43,535 - INFO - Processing January 2022-2023
+2025-09-30 15:48:43,535 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=January
+2025-09-30 15:48:43,942 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:43,945 - INFO - No data found for January 2022-2023
+2025-09-30 15:48:43,945 - INFO - Processing February 2022-2023
+2025-09-30 15:48:43,945 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=February
+2025-09-30 15:48:44,319 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:44,322 - INFO - No data found for February 2022-2023
+2025-09-30 15:48:44,322 - INFO - Processing March 2022-2023
+2025-09-30 15:48:44,322 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=March
+2025-09-30 15:48:44,711 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:44,712 - INFO - No data found for March 2022-2023
+2025-09-30 15:48:44,712 - INFO - Processing April 2022-2023
+2025-09-30 15:48:44,712 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=April
+2025-09-30 15:48:45,085 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:45,089 - INFO - No data found for April 2022-2023
+2025-09-30 15:48:45,089 - INFO - Processing May 2022-2023
+2025-09-30 15:48:45,089 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=May
+2025-09-30 15:48:45,482 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:45,486 - INFO - No data found for May 2022-2023
+2025-09-30 15:48:45,486 - INFO - Processing June 2022-2023
+2025-09-30 15:48:45,486 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=June
+2025-09-30 15:48:45,880 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:45,884 - INFO - No data found for June 2022-2023
+2025-09-30 15:48:45,884 - INFO - Processing July 2022-2023
+2025-09-30 15:48:45,884 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=July
+2025-09-30 15:48:46,279 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:46,282 - INFO - No data found for July 2022-2023
+2025-09-30 15:48:46,282 - INFO - Processing August 2022-2023
+2025-09-30 15:48:46,283 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=August
+2025-09-30 15:48:46,677 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:46,679 - INFO - No data found for August 2022-2023
+2025-09-30 15:48:46,680 - INFO - Processing September 2022-2023
+2025-09-30 15:48:46,680 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=September
+2025-09-30 15:48:47,089 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:47,092 - INFO - No data found for September 2022-2023
+2025-09-30 15:48:47,092 - INFO - Processing October 2022-2023
+2025-09-30 15:48:47,092 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=October
+2025-09-30 15:48:47,492 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:47,496 - INFO - No data found for October 2022-2023
+2025-09-30 15:48:47,496 - INFO - Processing November 2022-2023
+2025-09-30 15:48:47,496 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=November
+2025-09-30 15:48:47,898 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:47,901 - INFO - No data found for November 2022-2023
+2025-09-30 15:48:47,901 - INFO - Processing December 2022-2023
+2025-09-30 15:48:47,901 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2022-2023&month_name=December
+2025-09-30 15:48:48,306 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:48:48,309 - INFO - No data found for December 2022-2023
+2025-09-30 15:48:48,310 - INFO - Year 2022-2023 completed: {'records_fetched': 0, 'records_inserted': 0, 'duplicates_skipped': 0, 'errors': 0}
+2025-09-30 15:48:48,310 - INFO - Processing academic year: 2023-2024
+2025-09-30 15:48:48,310 - INFO - Processing January 2023-2024
+2025-09-30 15:48:48,310 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=January
+2025-09-30 15:49:00,950 - INFO - Successfully fetched 7205 records from API
+2025-09-30 15:49:00,952 - INFO - Starting data cleaning for 7205 records...
+2025-09-30 15:49:00,967 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:49:00,975 - INFO - ✓ Cleaned student names
+2025-09-30 15:49:00,980 - INFO - ✓ Converted grade names
+2025-09-30 15:49:01,008 - INFO - ✓ Formatted dates
+2025-09-30 15:49:01,009 - INFO - ✓ Cleaned gender values
+2025-09-30 15:49:01,011 - INFO - ✓ Extracted division names
+2025-09-30 15:49:02,767 - INFO - Database insert completed: 7205 inserted, 0 duplicates, 0 errors
+2025-09-30 15:49:02,768 - INFO - Processing February 2023-2024
+2025-09-30 15:49:02,768 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=February
+2025-09-30 15:49:17,077 - INFO - Successfully fetched 7855 records from API
+2025-09-30 15:49:17,082 - INFO - Starting data cleaning for 7855 records...
+2025-09-30 15:49:17,097 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:49:17,104 - INFO - ✓ Cleaned student names
+2025-09-30 15:49:17,109 - INFO - ✓ Converted grade names
+2025-09-30 15:49:17,138 - INFO - ✓ Formatted dates
+2025-09-30 15:49:17,139 - INFO - ✓ Cleaned gender values
+2025-09-30 15:49:17,141 - INFO - ✓ Extracted division names
+2025-09-30 15:49:19,031 - INFO - Database insert completed: 7855 inserted, 0 duplicates, 0 errors
+2025-09-30 15:49:19,032 - INFO - Processing March 2023-2024
+2025-09-30 15:49:19,033 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=March
+2025-09-30 15:49:32,962 - INFO - Successfully fetched 7747 records from API
+2025-09-30 15:49:32,970 - INFO - Starting data cleaning for 7747 records...
+2025-09-30 15:49:32,985 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:49:32,992 - INFO - ✓ Cleaned student names
+2025-09-30 15:49:32,996 - INFO - ✓ Converted grade names
+2025-09-30 15:49:33,024 - INFO - ✓ Formatted dates
+2025-09-30 15:49:33,025 - INFO - ✓ Cleaned gender values
+2025-09-30 15:49:33,028 - INFO - ✓ Extracted division names
+2025-09-30 15:49:34,883 - INFO - Database insert completed: 7747 inserted, 0 duplicates, 0 errors
+2025-09-30 15:49:34,884 - INFO - Processing April 2023-2024
+2025-09-30 15:49:34,884 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=April
+2025-09-30 15:49:47,230 - INFO - Successfully fetched 7316 records from API
+2025-09-30 15:49:47,237 - INFO - Starting data cleaning for 7316 records...
+2025-09-30 15:49:47,253 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:49:47,260 - INFO - ✓ Cleaned student names
+2025-09-30 15:49:47,264 - INFO - ✓ Converted grade names
+2025-09-30 15:49:47,292 - INFO - ✓ Formatted dates
+2025-09-30 15:49:47,293 - INFO - ✓ Cleaned gender values
+2025-09-30 15:49:47,295 - INFO - ✓ Extracted division names
+2025-09-30 15:49:49,119 - INFO - Database insert completed: 7316 inserted, 0 duplicates, 0 errors
+2025-09-30 15:49:49,120 - INFO - Processing May 2023-2024
+2025-09-30 15:49:49,120 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=May
+2025-09-30 15:49:49,510 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:49:49,523 - INFO - No data found for May 2023-2024
+2025-09-30 15:49:49,523 - INFO - Processing June 2023-2024
+2025-09-30 15:49:49,523 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=June
+2025-09-30 15:50:03,330 - INFO - Successfully fetched 7531 records from API
+2025-09-30 15:50:03,333 - INFO - Starting data cleaning for 7531 records...
+2025-09-30 15:50:03,348 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:50:03,355 - INFO - ✓ Cleaned student names
+2025-09-30 15:50:03,360 - INFO - ✓ Converted grade names
+2025-09-30 15:50:03,390 - INFO - ✓ Formatted dates
+2025-09-30 15:50:03,391 - INFO - ✓ Cleaned gender values
+2025-09-30 15:50:03,393 - INFO - ✓ Extracted division names
+2025-09-30 15:50:05,260 - INFO - Database insert completed: 7531 inserted, 0 duplicates, 0 errors
+2025-09-30 15:50:05,261 - INFO - Processing July 2023-2024
+2025-09-30 15:50:05,261 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=July
+2025-09-30 15:50:19,870 - INFO - Successfully fetched 7937 records from API
+2025-09-30 15:50:19,873 - INFO - Starting data cleaning for 7937 records...
+2025-09-30 15:50:19,891 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:50:19,899 - INFO - ✓ Cleaned student names
+2025-09-30 15:50:19,904 - INFO - ✓ Converted grade names
+2025-09-30 15:50:19,935 - INFO - ✓ Formatted dates
+2025-09-30 15:50:19,936 - INFO - ✓ Cleaned gender values
+2025-09-30 15:50:19,939 - INFO - ✓ Extracted division names
+2025-09-30 15:50:21,880 - INFO - Database insert completed: 7937 inserted, 0 duplicates, 0 errors
+2025-09-30 15:50:21,881 - INFO - Processing August 2023-2024
+2025-09-30 15:50:21,881 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=August
+2025-09-30 15:50:34,451 - INFO - Successfully fetched 6931 records from API
+2025-09-30 15:50:34,460 - INFO - Starting data cleaning for 6931 records...
+2025-09-30 15:50:34,473 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:50:34,479 - INFO - ✓ Cleaned student names
+2025-09-30 15:50:34,483 - INFO - ✓ Converted grade names
+2025-09-30 15:50:34,509 - INFO - ✓ Formatted dates
+2025-09-30 15:50:34,510 - INFO - ✓ Cleaned gender values
+2025-09-30 15:50:34,512 - INFO - ✓ Extracted division names
+2025-09-30 15:50:36,314 - INFO - Database insert completed: 6931 inserted, 0 duplicates, 0 errors
+2025-09-30 15:50:36,315 - INFO - Processing September 2023-2024
+2025-09-30 15:50:36,315 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=September
+2025-09-30 15:50:50,413 - INFO - Successfully fetched 7910 records from API
+2025-09-30 15:50:50,418 - INFO - Starting data cleaning for 7910 records...
+2025-09-30 15:50:50,434 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:50:50,441 - INFO - ✓ Cleaned student names
+2025-09-30 15:50:50,446 - INFO - ✓ Converted grade names
+2025-09-30 15:50:50,476 - INFO - ✓ Formatted dates
+2025-09-30 15:50:50,477 - INFO - ✓ Cleaned gender values
+2025-09-30 15:50:50,480 - INFO - ✓ Extracted division names
+2025-09-30 15:50:52,402 - INFO - Database insert completed: 7910 inserted, 0 duplicates, 0 errors
+2025-09-30 15:50:52,404 - INFO - Processing October 2023-2024
+2025-09-30 15:50:52,404 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=October
+2025-09-30 15:51:07,876 - INFO - Successfully fetched 7893 records from API
+2025-09-30 15:51:07,880 - INFO - Starting data cleaning for 7893 records...
+2025-09-30 15:51:07,896 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:51:07,904 - INFO - ✓ Cleaned student names
+2025-09-30 15:51:07,908 - INFO - ✓ Converted grade names
+2025-09-30 15:51:07,938 - INFO - ✓ Formatted dates
+2025-09-30 15:51:07,939 - INFO - ✓ Cleaned gender values
+2025-09-30 15:51:07,942 - INFO - ✓ Extracted division names
+2025-09-30 15:51:09,871 - INFO - Database insert completed: 7893 inserted, 0 duplicates, 0 errors
+2025-09-30 15:51:09,872 - INFO - Processing November 2023-2024
+2025-09-30 15:51:09,872 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=November
+2025-09-30 15:51:24,604 - INFO - Successfully fetched 7854 records from API
+2025-09-30 15:51:24,608 - INFO - Starting data cleaning for 7854 records...
+2025-09-30 15:51:24,622 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:51:24,629 - INFO - ✓ Cleaned student names
+2025-09-30 15:51:24,633 - INFO - ✓ Converted grade names
+2025-09-30 15:51:24,662 - INFO - ✓ Formatted dates
+2025-09-30 15:51:24,663 - INFO - ✓ Cleaned gender values
+2025-09-30 15:51:24,666 - INFO - ✓ Extracted division names
+2025-09-30 15:51:26,775 - INFO - Database insert completed: 7854 inserted, 0 duplicates, 0 errors
+2025-09-30 15:51:26,777 - INFO - Processing December 2023-2024
+2025-09-30 15:51:26,777 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2023-2024&month_name=December
+2025-09-30 15:51:41,616 - INFO - Successfully fetched 7843 records from API
+2025-09-30 15:51:41,620 - INFO - Starting data cleaning for 7843 records...
+2025-09-30 15:51:41,635 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:51:41,642 - INFO - ✓ Cleaned student names
+2025-09-30 15:51:41,646 - INFO - ✓ Converted grade names
+2025-09-30 15:51:41,675 - INFO - ✓ Formatted dates
+2025-09-30 15:51:41,676 - INFO - ✓ Cleaned gender values
+2025-09-30 15:51:41,679 - INFO - ✓ Extracted division names
+2025-09-30 15:51:43,641 - INFO - Database insert completed: 7843 inserted, 0 duplicates, 0 errors
+2025-09-30 15:51:43,642 - INFO - Year 2023-2024 completed: {'records_fetched': 84022, 'records_inserted': 84022, 'duplicates_skipped': 0, 'errors': 0}
+2025-09-30 15:51:43,642 - INFO - Processing academic year: 2024-2025
+2025-09-30 15:51:43,642 - INFO - Processing January 2024-2025
+2025-09-30 15:51:43,642 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=January
+2025-09-30 15:52:09,085 - INFO - Successfully fetched 14203 records from API
+2025-09-30 15:52:09,091 - INFO - Starting data cleaning for 14203 records...
+2025-09-30 15:52:09,114 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:52:09,126 - INFO - ✓ Cleaned student names
+2025-09-30 15:52:09,132 - INFO - ✓ Converted grade names
+2025-09-30 15:52:09,181 - INFO - ✓ Formatted dates
+2025-09-30 15:52:09,183 - INFO - ✓ Cleaned gender values
+2025-09-30 15:52:09,188 - INFO - ✓ Extracted division names
+2025-09-30 15:52:12,597 - INFO - Database insert completed: 14203 inserted, 0 duplicates, 0 errors
+2025-09-30 15:52:12,599 - INFO - Processing February 2024-2025
+2025-09-30 15:52:12,599 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=February
+2025-09-30 15:52:40,510 - INFO - Successfully fetched 14171 records from API
+2025-09-30 15:52:40,520 - INFO - Starting data cleaning for 14171 records...
+2025-09-30 15:52:40,543 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:52:40,554 - INFO - ✓ Cleaned student names
+2025-09-30 15:52:40,561 - INFO - ✓ Converted grade names
+2025-09-30 15:52:40,609 - INFO - ✓ Formatted dates
+2025-09-30 15:52:40,611 - INFO - ✓ Cleaned gender values
+2025-09-30 15:52:40,616 - INFO - ✓ Extracted division names
+2025-09-30 15:52:43,989 - INFO - Database insert completed: 14171 inserted, 0 duplicates, 0 errors
+2025-09-30 15:52:43,990 - INFO - Processing March 2024-2025
+2025-09-30 15:52:43,990 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=March
+2025-09-30 15:53:09,540 - INFO - Successfully fetched 13830 records from API
+2025-09-30 15:53:09,546 - INFO - Starting data cleaning for 13830 records...
+2025-09-30 15:53:09,569 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:53:09,581 - INFO - ✓ Cleaned student names
+2025-09-30 15:53:09,587 - INFO - ✓ Converted grade names
+2025-09-30 15:53:09,635 - INFO - ✓ Formatted dates
+2025-09-30 15:53:09,636 - INFO - ✓ Cleaned gender values
+2025-09-30 15:53:09,641 - INFO - ✓ Extracted division names
+2025-09-30 15:53:12,905 - INFO - Database insert completed: 13830 inserted, 0 duplicates, 0 errors
+2025-09-30 15:53:12,907 - INFO - Processing April 2024-2025
+2025-09-30 15:53:12,907 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=April
+2025-09-30 15:53:37,365 - INFO - Successfully fetched 13631 records from API
+2025-09-30 15:53:37,381 - INFO - Starting data cleaning for 13631 records...
+2025-09-30 15:53:37,404 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:53:37,415 - INFO - ✓ Cleaned student names
+2025-09-30 15:53:37,421 - INFO - ✓ Converted grade names
+2025-09-30 15:53:37,468 - INFO - ✓ Formatted dates
+2025-09-30 15:53:37,470 - INFO - ✓ Cleaned gender values
+2025-09-30 15:53:37,474 - INFO - ✓ Extracted division names
+2025-09-30 15:53:40,776 - INFO - Database insert completed: 13631 inserted, 0 duplicates, 0 errors
+2025-09-30 15:53:40,777 - INFO - Processing May 2024-2025
+2025-09-30 15:53:40,777 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=May
+2025-09-30 15:53:41,173 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:53:41,188 - INFO - No data found for May 2024-2025
+2025-09-30 15:53:41,188 - INFO - Processing June 2024-2025
+2025-09-30 15:53:41,188 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=June
+2025-09-30 15:54:01,851 - INFO - Successfully fetched 11803 records from API
+2025-09-30 15:54:01,853 - INFO - Starting data cleaning for 11803 records...
+2025-09-30 15:54:01,875 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:54:01,884 - INFO - ✓ Cleaned student names
+2025-09-30 15:54:01,890 - INFO - ✓ Converted grade names
+2025-09-30 15:54:01,932 - INFO - ✓ Formatted dates
+2025-09-30 15:54:01,933 - INFO - ✓ Cleaned gender values
+2025-09-30 15:54:01,937 - INFO - ✓ Extracted division names
+2025-09-30 15:54:04,746 - INFO - Database insert completed: 11803 inserted, 0 duplicates, 0 errors
+2025-09-30 15:54:04,748 - INFO - Processing July 2024-2025
+2025-09-30 15:54:04,748 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=July
+2025-09-30 15:54:32,042 - INFO - Successfully fetched 13762 records from API
+2025-09-30 15:54:32,050 - INFO - Starting data cleaning for 13762 records...
+2025-09-30 15:54:32,073 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:54:32,084 - INFO - ✓ Cleaned student names
+2025-09-30 15:54:32,090 - INFO - ✓ Converted grade names
+2025-09-30 15:54:32,136 - INFO - ✓ Formatted dates
+2025-09-30 15:54:32,138 - INFO - ✓ Cleaned gender values
+2025-09-30 15:54:32,142 - INFO - ✓ Extracted division names
+2025-09-30 15:54:35,483 - INFO - Database insert completed: 13762 inserted, 0 duplicates, 0 errors
+2025-09-30 15:54:35,484 - INFO - Processing August 2024-2025
+2025-09-30 15:54:35,484 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=August
+2025-09-30 15:55:00,956 - INFO - Successfully fetched 13985 records from API
+2025-09-30 15:55:00,966 - INFO - Starting data cleaning for 13985 records...
+2025-09-30 15:55:00,991 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:55:01,003 - INFO - ✓ Cleaned student names
+2025-09-30 15:55:01,010 - INFO - ✓ Converted grade names
+2025-09-30 15:55:01,059 - INFO - ✓ Formatted dates
+2025-09-30 15:55:01,061 - INFO - ✓ Cleaned gender values
+2025-09-30 15:55:01,065 - INFO - ✓ Extracted division names
+2025-09-30 15:55:04,408 - INFO - Database insert completed: 13985 inserted, 0 duplicates, 0 errors
+2025-09-30 15:55:04,410 - INFO - Processing September 2024-2025
+2025-09-30 15:55:04,410 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=September
+2025-09-30 15:55:29,245 - INFO - Successfully fetched 13991 records from API
+2025-09-30 15:55:29,255 - INFO - Starting data cleaning for 13991 records...
+2025-09-30 15:55:29,278 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:55:29,290 - INFO - ✓ Cleaned student names
+2025-09-30 15:55:29,296 - INFO - ✓ Converted grade names
+2025-09-30 15:55:29,343 - INFO - ✓ Formatted dates
+2025-09-30 15:55:29,345 - INFO - ✓ Cleaned gender values
+2025-09-30 15:55:29,350 - INFO - ✓ Extracted division names
+2025-09-30 15:55:32,827 - INFO - Database insert completed: 13991 inserted, 0 duplicates, 0 errors
+2025-09-30 15:55:32,829 - INFO - Processing October 2024-2025
+2025-09-30 15:55:32,829 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=October
+2025-09-30 15:55:57,453 - INFO - Successfully fetched 14284 records from API
+2025-09-30 15:55:57,458 - INFO - Starting data cleaning for 14284 records...
+2025-09-30 15:55:57,482 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:55:57,493 - INFO - ✓ Cleaned student names
+2025-09-30 15:55:57,500 - INFO - ✓ Converted grade names
+2025-09-30 15:55:57,550 - INFO - ✓ Formatted dates
+2025-09-30 15:55:57,552 - INFO - ✓ Cleaned gender values
+2025-09-30 15:55:57,557 - INFO - ✓ Extracted division names
+2025-09-30 15:56:01,011 - INFO - Database insert completed: 14284 inserted, 0 duplicates, 0 errors
+2025-09-30 15:56:01,013 - INFO - Processing November 2024-2025
+2025-09-30 15:56:01,013 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=November
+2025-09-30 15:56:26,195 - INFO - Successfully fetched 14194 records from API
+2025-09-30 15:56:26,209 - INFO - Starting data cleaning for 14194 records...
+2025-09-30 15:56:26,234 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:56:26,252 - INFO - ✓ Cleaned student names
+2025-09-30 15:56:26,258 - INFO - ✓ Converted grade names
+2025-09-30 15:56:26,307 - INFO - ✓ Formatted dates
+2025-09-30 15:56:26,309 - INFO - ✓ Cleaned gender values
+2025-09-30 15:56:26,313 - INFO - ✓ Extracted division names
+2025-09-30 15:56:29,530 - INFO - Database insert completed: 14194 inserted, 0 duplicates, 0 errors
+2025-09-30 15:56:29,531 - INFO - Processing December 2024-2025
+2025-09-30 15:56:29,531 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2024-2025&month_name=December
+2025-09-30 15:56:54,773 - INFO - Successfully fetched 14129 records from API
+2025-09-30 15:56:54,780 - INFO - Starting data cleaning for 14129 records...
+2025-09-30 15:56:54,804 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:56:54,815 - INFO - ✓ Cleaned student names
+2025-09-30 15:56:54,822 - INFO - ✓ Converted grade names
+2025-09-30 15:56:54,869 - INFO - ✓ Formatted dates
+2025-09-30 15:56:54,871 - INFO - ✓ Cleaned gender values
+2025-09-30 15:56:54,876 - INFO - ✓ Extracted division names
+2025-09-30 15:56:58,348 - INFO - Database insert completed: 14129 inserted, 0 duplicates, 0 errors
+2025-09-30 15:56:58,350 - INFO - Year 2024-2025 completed: {'records_fetched': 151983, 'records_inserted': 151983, 'duplicates_skipped': 0, 'errors': 0}
+2025-09-30 15:56:58,350 - INFO - Processing academic year: 2025-2026
+2025-09-30 15:56:58,350 - INFO - Processing January 2025-2026
+2025-09-30 15:56:58,350 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=January
+2025-09-30 15:56:58,738 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:56:58,753 - INFO - No data found for January 2025-2026
+2025-09-30 15:56:58,753 - INFO - Processing February 2025-2026
+2025-09-30 15:56:58,753 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=February
+2025-09-30 15:56:59,156 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:56:59,159 - INFO - No data found for February 2025-2026
+2025-09-30 15:56:59,159 - INFO - Processing March 2025-2026
+2025-09-30 15:56:59,159 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=March
+2025-09-30 15:56:59,565 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:56:59,568 - INFO - No data found for March 2025-2026
+2025-09-30 15:56:59,568 - INFO - Processing April 2025-2026
+2025-09-30 15:56:59,569 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=April
+2025-09-30 15:56:59,978 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:56:59,981 - INFO - No data found for April 2025-2026
+2025-09-30 15:56:59,981 - INFO - Processing May 2025-2026
+2025-09-30 15:56:59,981 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=May
+2025-09-30 15:57:00,369 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:57:00,373 - INFO - No data found for May 2025-2026
+2025-09-30 15:57:00,373 - INFO - Processing June 2025-2026
+2025-09-30 15:57:00,373 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=June
+2025-09-30 15:57:28,502 - INFO - Successfully fetched 14350 records from API
+2025-09-30 15:57:28,505 - INFO - Starting data cleaning for 14350 records...
+2025-09-30 15:57:28,529 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:57:28,541 - INFO - ✓ Cleaned student names
+2025-09-30 15:57:28,548 - INFO - ✓ Converted grade names
+2025-09-30 15:57:28,597 - INFO - ✓ Formatted dates
+2025-09-30 15:57:28,599 - INFO - ✓ Cleaned gender values
+2025-09-30 15:57:28,604 - INFO - ✓ Extracted division names
+2025-09-30 15:57:32,116 - INFO - Database insert completed: 14350 inserted, 0 duplicates, 0 errors
+2025-09-30 15:57:32,118 - INFO - Processing July 2025-2026
+2025-09-30 15:57:32,118 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=July
+2025-09-30 15:57:56,289 - INFO - Successfully fetched 14165 records from API
+2025-09-30 15:57:56,299 - INFO - Starting data cleaning for 14165 records...
+2025-09-30 15:57:56,324 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:57:56,338 - INFO - ✓ Cleaned student names
+2025-09-30 15:57:56,345 - INFO - ✓ Converted grade names
+2025-09-30 15:57:56,392 - INFO - ✓ Formatted dates
+2025-09-30 15:57:56,394 - INFO - ✓ Cleaned gender values
+2025-09-30 15:57:56,399 - INFO - ✓ Extracted division names
+2025-09-30 15:58:01,886 - INFO - Database insert completed: 14165 inserted, 0 duplicates, 0 errors
+2025-09-30 15:58:01,888 - INFO - Processing August 2025-2026
+2025-09-30 15:58:01,888 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=August
+2025-09-30 15:58:27,213 - INFO - Successfully fetched 14705 records from API
+2025-09-30 15:58:27,225 - INFO - Starting data cleaning for 14705 records...
+2025-09-30 15:58:27,264 - INFO - ✓ Trimmed whitespace from all fields
+2025-09-30 15:58:27,312 - INFO - ✓ Cleaned student names
+2025-09-30 15:58:27,350 - INFO - ✓ Converted grade names
+2025-09-30 15:58:27,413 - INFO - ✓ Formatted dates
+2025-09-30 15:58:27,415 - INFO - ✓ Cleaned gender values
+2025-09-30 15:58:27,420 - INFO - ✓ Extracted division names
+2025-09-30 15:58:31,068 - INFO - Database insert completed: 14705 inserted, 0 duplicates, 0 errors
+2025-09-30 15:58:31,070 - INFO - Processing September 2025-2026
+2025-09-30 15:58:31,070 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=September
+2025-09-30 15:58:31,470 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:58:31,484 - INFO - No data found for September 2025-2026
+2025-09-30 15:58:31,484 - INFO - Processing October 2025-2026
+2025-09-30 15:58:31,484 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=October
+2025-09-30 15:58:31,901 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:58:31,905 - INFO - No data found for October 2025-2026
+2025-09-30 15:58:31,905 - INFO - Processing November 2025-2026
+2025-09-30 15:58:31,905 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=November
+2025-09-30 15:58:32,320 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:58:32,324 - INFO - No data found for November 2025-2026
+2025-09-30 15:58:32,324 - INFO - Processing December 2025-2026
+2025-09-30 15:58:32,324 - INFO - Fetching data from API: https://akanksha.edustems.com/getStudentAttendanceSWPTM.htm?api-key=r5fabd64-e28d-4e9b-be57-c030j589&academic_year=2025-2026&month_name=December
+2025-09-30 15:58:32,785 - INFO - Successfully fetched 0 records from API
+2025-09-30 15:58:32,789 - INFO - No data found for December 2025-2026
+2025-09-30 15:58:32,789 - INFO - Year 2025-2026 completed: {'records_fetched': 43220, 'records_inserted': 43220, 'duplicates_skipped': 0, 'errors': 0}
+2025-09-30 15:58:32,789 - INFO - === Historical SWPTM ETL Process Completed ===
+2025-09-30 15:58:32,790 - INFO - Total processing time: 589.34 seconds
+2025-09-30 15:58:32,790 - INFO - Academic years processed: 4
+2025-09-30 15:58:32,790 - INFO - Months processed: 25
+2025-09-30 15:58:32,790 - INFO - Total records fetched: 279225
+2025-09-30 15:58:32,790 - INFO - Total records inserted: 279225
+2025-09-30 15:58:32,790 - INFO - Total duplicates skipped: 0
+2025-09-30 15:58:32,790 - INFO - Total errors: 0
